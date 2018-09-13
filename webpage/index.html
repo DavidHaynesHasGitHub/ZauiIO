@@ -1,76 +1,2433 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <title>Example app</title>
-    <meta name="description" content="" />
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/gradients.css" rel="stylesheet">
-</head>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Zaui IO API</title>
 
-<body class="">
-    <div class="wrapper">
-        <div class="graphics">
-            <div class="tower">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="-11 170 1000 429" enable-background="new -11 170 1000 429" xml:space="preserve">
-                    <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M989,595H712v-35c0,0,4.5-1.8,8-3
-                                                                                                  c5.2-1.8,12.5,5.3,22-4c3.4-3.4-0.9-7.8-0.4-10.1c0.7-3.1,4.4-6.8,1.6-11.4c-2.6-4.2-6.9-3.6-8.2-5.5c-1.7-2.3-2.2-6.3-7-9
-                                                                                                  c-5.6-3.1-9.9,0.2-13-1c-2.5-0.9-2.3-5-9-5c-4.8,0-7.2,4.8-10,5c-2.3,0.2-4.9-4.5-10-2c-5.5,2.8-4,7.3-6,9c-1.4,1.2-3.1,3.2-6,4.2
-                                                                                                  c-2.6,0.9-4.9,3-4,8.8c0.6,3.7,6.8,4.1,7.5,6c1,2.9-6.4,6.2-2.5,12c3,4.5,9,1.6,12,1c1.9-0.4,7.1-0.7,8,0c3.4,2.5,9,5,9,5v35
-                                                                                                  l-506-1.5L182.3,444l0.3-0.8v-69.6l-0.2-0.2l12.3-72.3c10.9-2.6,16.5-6.5,16.5-6.5l-5.2-2.9l1.1-5.8l15-3.3l-10.1-3.9l1.2-4.6
-                                                                                                  c-15.8-8.3-32.2-11-32.2-11v-3.6l4.1-6.5h-4.9v-4.4h-8.3V244h-1.2l-1.7-31.2l-1-1.3l-1,1.3l-1.7,31.2h-1.2v4.8h-8.3v4.4h-4.9
-                                                                                                  l4.1,6.5v3.6c0,0-16.5,2.7-32.2,11l1.2,4.6l-10.1,3.9l15,3.3l1.1,5.8l-5.1,2.9c0,0,5.5,3.9,16.4,6.5l12.3,72.4l-0.1,0.1v69.6
-                                                                                                  l0.3,0.8l-14.6,149.4h-1.2H-11"/>
-                    <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M8,393.7c0-13.5,12.1-10.8,15.6-14.7
-                                                                                                  c2.8-3.2-1-8.8,9-13.9c7.9-4.1,9.7,1,13.1,0.8c4.5-0.3,3.3-6.7,14.7-6.6c12.7,0.2,11.2,8.4,14.7,10.6c3,1.9,7.9-2.1,13.9,4.1
-                                                                                                  c3.8,4,1.3,7.4,2.5,9.8c2.2,4.4,14.7,0.9,14.7,13.9c0,12.2-13.5,8.3-17.2,10.6c-3.6,2.3-4.4,9.3-13.1,11.5c-8,2-9.5-4-13.9-4.1
-                                                                                                  c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C21.9,406.3,8,408.6,8,393.7z"/>
-                    <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M325.1,313.9c-3.9,3-3.9,10-15.7,11.8
-                                                                                                  c-12.8,2-13.3-6.4-18-6.3c-4.3,0.1-5.7,5.8-13.3,3.9c-8.4-2.1-9.1-8.8-12.5-11c-3.6-2.3-16.5,1.5-16.5-10.2c0-12.4,12-9.1,14.1-13.3
-                                                                                                  c1.1-2.3-1.3-5.6,2.4-9.4c5.8-6,10.4-2.1,13.3-3.9c3.4-2.1,2-10,14.1-10.2c11-0.2,9.9,6,14.1,6.3c3.3,0.2,5-4.7,12.5-0.8
-                                                                                                  c9.6,4.9,6,10.3,8.6,13.3c3.3,3.7,14.9,1.2,14.9,14.1C343.1,312.5,329.8,310.3,325.1,313.9z"/>
-                    <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M18.4,229.5c0-13.5,12.1-10.8,15.6-14.7
-                                                                                                  c2.8-3.2-1-8.8,9-13.9c7.9-4.1,9.7,1,13.1,0.8c4.5-0.3,3.3-6.7,14.7-6.6c12.7,0.2,11.2,8.4,14.7,10.6c3,1.9,7.9-2.1,13.9,4.1
-                                                                                                  c3.8,4,1.3,7.4,2.5,9.8c2.2,4.4,14.7,0.9,14.7,13.9c0,12.2-13.5,8.3-17.2,10.6c-3.6,2.3-4.4,9.3-13.1,11.5c-8,2-9.5-4-13.9-4.1
-                                                                                                  c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C32.2,242.1,18.4,244.4,18.4,229.5z"/>
-                    <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M215.8,398.8c0-13.5,12.1-10.8,15.6-14.7
-                                                                                                  c2.8-3.2-1-8.8,9-13.9c7.9-4.1,9.7,1,13.1,0.8c4.5-0.3,3.3-6.7,14.7-6.6c12.7,0.2,11.2,8.4,14.7,10.6c3,1.9,7.9-2.1,13.9,4.1
-                                                                                                  c3.8,4,1.3,7.4,2.5,9.8c2.2,4.4,14.7,0.9,14.7,13.9c0,12.2-13.5,8.3-17.2,10.6c-3.6,2.3-4.4,9.3-13.1,11.5c-8,2-9.5-4-13.9-4.1
-                                                                                                  c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C229.7,411.3,215.8,413.6,215.8,398.8z"/>
-                </svg>
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
 
-            </div>
+  <body class="index" data-languages="[&quot;xml&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.svg" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="xml">xml</a>
         </div>
-
-        <header>
-            <nav class="website-nav">
-                <ul>
-                    <li><a class="home-link" href="https://aws.amazon.com/">Home</a></li>
-                    <li><a href="https://aws.amazon.com/what-is-cloud-computing/">About</a></li>
-                    <li><a href="https://aws.amazon.com/solutions/">Services</a></li>
-                    <li><a href="https://aws.amazon.com/contact-us/">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="message">
-            <a class="twitter-link" href="http://twitter.com/home/?status=I%20created%20a%20project%20with%20AWS%20CodeStar!%20%23AWS%20%23AWSCodeStar%20https%3A%2F%2Faws.amazon.com%2Fcodestar"><img src="img/tweet.svg" /></a>
-            <div class="text">
-                <h1>Congratulations!</h1>
-                <h2>You just created an HTML5 web application</h2>
-            </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#zaui-software-io-api" class="toc-h1 toc-link" data-title="zaui-software-io-api">Zaui Software IO API</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction" class="toc-h2 toc-link" data-title="introduction">Introduction</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-throttle" class="toc-h1 toc-link" data-title="api-throttle">API Throttle</a>
+          </li>
+          <li>
+            <a href="#authentication-credentials" class="toc-h1 toc-link" data-title="authentication-credentials">Authentication Credentials</a>
+          </li>
+          <li>
+            <a href="#test-supplier-system" class="toc-h1 toc-link" data-title="test-supplier-system">Test Supplier System</a>
+          </li>
+          <li>
+            <a href="#submitting-to-the-api" class="toc-h1 toc-link" data-title="submitting-to-the-api">Submitting to the API</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#suppressing-http-response-codes" class="toc-h2 toc-link" data-title="suppressing-http-response-codes">Suppressing HTTP Response codes</a>
+                  </li>
+                  <li>
+                    <a href="#implementing-exponential-back-off" class="toc-h2 toc-link" data-title="implementing-exponential-back-off">Implementing Exponential Back-off</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-function-definitions" class="toc-h1 toc-link" data-title="api-function-definitions">API Function Definitions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#required-authentication-variables" class="toc-h2 toc-link" data-title="required-authentication-variables">Required Authentication Variables</a>
+                  </li>
+                  <li>
+                    <a href="#activity-list-requests" class="toc-h2 toc-link" data-title="activity-list-requests">Activity List Requests</a>
+                  </li>
+                  <li>
+                    <a href="#activity-list-response" class="toc-h2 toc-link" data-title="activity-list-response">Activity List Response</a>
+                  </li>
+                  <li>
+                    <a href="#check-availability-requeststatus" class="toc-h2 toc-link" data-title="check-availability-requeststatus">Check Availability RequestStatus</a>
+                  </li>
+                  <li>
+                    <a href="#check-availability-response" class="toc-h2 toc-link" data-title="check-availability-response">Check Availability Response</a>
+                  </li>
+                  <li>
+                    <a href="#batch-check-availability-request" class="toc-h2 toc-link" data-title="batch-check-availability-request">Batch Check Availability Request</a>
+                  </li>
+                  <li>
+                    <a href="#batch-check-availability-response" class="toc-h2 toc-link" data-title="batch-check-availability-response">Batch Check Availability Response</a>
+                  </li>
+                  <li>
+                    <a href="#booking-create-response" class="toc-h2 toc-link" data-title="booking-create-response">Booking Create Response</a>
+                  </li>
+                  <li>
+                    <a href="#booking-update-request" class="toc-h2 toc-link" data-title="booking-update-request">Booking Update Request</a>
+                  </li>
+                  <li>
+                    <a href="#booking-update-response" class="toc-h2 toc-link" data-title="booking-update-response">Booking Update Response</a>
+                  </li>
+                  <li>
+                    <a href="#booking-cancel-request" class="toc-h2 toc-link" data-title="booking-cancel-request">Booking Cancel Request</a>
+                  </li>
+                  <li>
+                    <a href="#booking-cancel-response" class="toc-h2 toc-link" data-title="booking-cancel-response">Booking Cancel Response</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#http-status-codes" class="toc-h1 toc-link" data-title="http-status-codes">HTTP Status Codes</a>
+          </li>
+          <li>
+            <a href="#legal" class="toc-h1 toc-link" data-title="legal">Legal</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#acceptance-of-terms" class="toc-h2 toc-link" data-title="acceptance-of-terms">Acceptance of Terms</a>
+                  </li>
+                  <li>
+                    <a href="#permitted-use" class="toc-h2 toc-link" data-title="permitted-use">Permitted Use</a>
+                  </li>
+                  <li>
+                    <a href="#restrictions" class="toc-h2 toc-link" data-title="restrictions">Restrictions</a>
+                  </li>
+                  <li>
+                    <a href="#rate-limits-and-monitoring" class="toc-h2 toc-link" data-title="rate-limits-and-monitoring">Rate Limits and Monitoring</a>
+                  </li>
+                  <li>
+                    <a href="#ownership-trademarks" class="toc-h2 toc-link" data-title="ownership-trademarks">Ownership/Trademarks</a>
+                  </li>
+                  <li>
+                    <a href="#privacy-policy" class="toc-h2 toc-link" data-title="privacy-policy">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#limitation-of-liability" class="toc-h2 toc-link" data-title="limitation-of-liability">Limitation of Liability</a>
+                  </li>
+                  <li>
+                    <a href="#unauthorized-use-no-interference" class="toc-h2 toc-link" data-title="unauthorized-use-no-interference">Unauthorized Use/No Interference</a>
+                  </li>
+                  <li>
+                    <a href="#indemnification" class="toc-h2 toc-link" data-title="indemnification">Indemnification</a>
+                  </li>
+                  <li>
+                    <a href="#termination" class="toc-h2 toc-link" data-title="termination">Termination</a>
+                  </li>
+                  <li>
+                    <a href="#accuracy-of-information" class="toc-h2 toc-link" data-title="accuracy-of-information">Accuracy of Information</a>
+                  </li>
+                  <li>
+                    <a href="#transmission-failures" class="toc-h2 toc-link" data-title="transmission-failures">Transmission Failures</a>
+                  </li>
+                  <li>
+                    <a href="#limitation-of-liability-2" class="toc-h2 toc-link" data-title="limitation-of-liability">Limitation of Liability</a>
+                  </li>
+                  <li>
+                    <a href="#governing-law-jurisdiction" class="toc-h2 toc-link" data-title="governing-law-jurisdiction">Governing law/Jurisdiction</a>
+                  </li>
+                  <li>
+                    <a href="#entire-agreement" class="toc-h2 toc-link" data-title="entire-agreement">Entire Agreement</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://api.zaui.io/signup'>Sign Up for a Developer Key</a></li>
+            <li><a href='https://davidhayneshasgithub.github.io/ZauiWebApi/'>See our Web API Documentation</a></li>
+            <li><a href='https://davidhayneshasgithub.github.io/ZauiWebHook'>See our Web-Hook and Remote Target Documentation</a></li>
+        </ul>
     </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='zaui-software-io-api'>Zaui Software IO API</h1><h2 id='introduction'>Introduction</h2>
+<p>Zaui.io is an XML API based messaging platform designed for resellers, developers or anyone wanting access to real-time inventory from any suppliers within the Zaui supplier market place.</p>
 
-    <footer>
-        <p class="footer-contents">Designed and developed with
-            <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Seattle.
-        </p>
-    </footer>
+<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<h1 id='api-throttle'>API Throttle</h1>
+<p>To ensure continuous quality of service, API usage can be subjected to throttling. The throttle will be applied once an API client reaches a certain threshold.
+Zaui Software reserves the right to throttle any and all API clients to ensure quality of service for all Zaui Software customers.</p>
 
-    <script src="js/set-background.js"></script>
-</body>
+<p>Those clients who do encounter a throttle threshold will get met with a HTTP 503 response code and the error XML node populated.</p>
 
+<p>We encourage all API developers to anticipate this error and take appropriate measures like:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Using a cached value from a previous call
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Passing on a message to the end user that is subjected to this behavior (if any)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Implement exponential back-off in your logic (see below)
+<br>
+Before starting, anyone organization wishing to use this API, must have been provided authentication credentials.</p>
+<h1 id='authentication-credentials'>Authentication Credentials</h1>
+<p>All API calls are authenticated. To obtain your login credentials, please visit www.zaui.io, use our automated reseller sign up to obtain your login credentials. Credentials will be your reseller, or developer, ID and your authentication token, and destination supplier ID.</p>
+
+<p>Credentials for the API can be obtained by signing up, for free, on our website <a href="https://api.zaui.io/signup" target="_blank"_>Zaui.io</a></p>
+<h1 id='test-supplier-system'>Test Supplier System</h1>
+<p>During your development and testing phases, and prior to connecting to live suppliers, you are welcome to use the test supplier ID for all your API calls: Test supplier ID = 200</p>
+
+<p>This supplier has various tours and activities available for you to integrate your test environment with.</p>
+
+<p>Should you need to see a specific activity type in this system, which is not present, please contact our support staff at <a href="mailto:support@zaui.com?Subject=API%20Support" target="_top"_>support@zaui.com</a></p>
+<h1 id='submitting-to-the-api'>Submitting to the API</h1>
+<blockquote>
+<p>All API access is over HTTPS and accessed from the <a href="https://api.zaui.io/v1/">https://api.zaui.io/v1/</a> domain.</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>$ curl -ki https://api.zaui.io/v1/
+HTTP/1.1 200 OK
+Date: Wed, 07 Jan 2015 00:12:51 GMT Server: Apache
+X-Powered-By: PHP/5.4.35
+Vary: Accept-Encoding Content-Length: 411
+Content-Type: text/xml
+<span class="cp">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="nt">&lt;version</span> <span class="na">xmlns=</span><span class="s">"http://www.zaui.io/api"</span> <span class="na">xmlns:atom=</span><span class="s">"http://www.w3.org/2005/Atom"</span> <span class="na">id=</span><span class="s">"v1"</span> <span class="na">status=</span><span class="s">"CURRENT"</span> <span class="nt">&gt;</span>
+  <span class="nt">&lt;media-types&gt;</span>
+    <span class="nt">&lt;media-type</span> <span class="na">base=</span><span class="s">"application/xml"</span> <span class="na">type=</span><span class="s">"application/xml;version=v1"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/media-types&gt;</span>
+  <span class="nt">&lt;atom:link</span> <span class="na">rel=</span><span class="s">"self"</span> <span class="na">href=</span><span class="s">"https://api.zaui.io/v1"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;atom:link</span> <span class="na">rel=</span><span class="s">"describedby"</span> <span class="na">href=</span><span class="s">"http://www.zaui.io/api/v1"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/version&gt;</span>
+</code></pre>
+<p>All API request to the Zaui.io platform must be sent using an HTTPS POST using the following URI:</p>
+
+<p>All API access is over HTTPS and accessed from the https://api.zaui.io/v1/ domain.</p>
+
+<p>Each response consists of an object with the following properties:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>• HTTP response status code:</strong> The status code of the HTTP response. This does match the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header value of the response, unless suppress_response_codes=true was sent (see below). For a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list of suppress_response_codes=true valid response codes, see the appendix at the close of this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>• XML data payload:</strong> The result data will always return XML</p>
+<h3 id='suppressing-http-response-codes'>Suppressing HTTP Response codes</h3>
+<p>Certain technologies either don’t handle or can’t handle HTTP response codes. More specifically, they
+don’t handle any non 200 HTTP status codes. For this result our API provides provisioning for this. In
+this case, your implementation can send through the suppress_response_codes with the value true .
+This will always request a status code of 200 in the response header. The original, and true, status code
+is then available within the response body.</p>
+<h3 id='implementing-exponential-back-off'>Implementing Exponential Back-off</h3>
+<p>Exponential back-off is the process of a client periodically retrying a failed request over an increasing amount of time. <em>It is a standard error handling strategy for network applications.</em> Besides being “required”, using exponential back-off increases the efficiency of bandwidth usage, reduces the number of requests required to get successful response, and maximizes the throughput of requests in concurrent environments.
+<br>
+<br>
+The flow of implementing a simple exponential back-off is as follows:</p>
+
+<ol>
+<li> Make a request to the API</li>
+<li> Receive the response, check for error that <strong>has a retry-able error code (such as 503)</strong></li>
+<li> Wait 1s + random_number_milliseconds seconds</li>
+<li> Retry request</li>
+<li> Receive the response, check for error that <strong>has a retry-able error code (such as 503)</strong></li>
+<li> Wait 2s + random_number_milliseconds seconds</li>
+<li> Retry request</li>
+<li> Receive the response, check for error that <strong>has a retry-able error code (such as 503)</strong></li>
+<li> Wait   seconds</li>
+<li>Retry request</li>
+<li>Receive the response, check for error that <strong>has a retry-able error code (such as 503)</strong></li>
+<li>Wait 8s + random_number_milliseconds seconds</li>
+<li>Retry request</li>
+<li>Receive the response, check for error that <strong>has a retry-able error code (such as 503)</strong></li>
+<li>Wait 16s + random_number_milliseconds seconds</li>
+<li>Retry request</li>
+<li>If you still get an error, stop and log the error</li>
+</ol>
+
+<p><strong>Note:</strong> <em>random_number_milliseconds MUST be redefined after each “Wait”</em></p>
+
+<p>In the above flow, random_number_milliseconds is a random number of milliseconds less than or equal to 1000. This is necessary to avoid certain lock errors in some concurrent implementations.</p>
+
+<p><strong>Note:</strong> <em>the wait is always (2^n) + random_number_milliseconds, where n is a mono-tonically increasing integer initially defined as 0. N is incremented by 1 for each iteration (each request)</em></p>
+
+<p>The algorithm is set to terminate when n == 5. This ceiling is in place to prevent clients from retrying infinitely, and results in a total delay of 32 seconds before a deemed “unrecoverable error”.</p>
+<h1 id='api-function-definitions'>API Function Definitions</h1><h2 id='required-authentication-variables'>Required Authentication Variables</h2>
+<p>While we have outlined each of the request and response API calls, its important to know that you must
+submit through your <em>ResellerID</em>, destination <em>SupplierId</em> and <em>APIKey</em> with every API request to our systems.</p>
+<h2 id='activity-list-requests'>Activity List Requests</h2>
+<blockquote>
+<p>Example Activity List Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;ActivityListRequest</span>  <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+  <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+  <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+  <span class="nt">&lt;ExternalReference&gt;</span>10051374722994001<span class="nt">&lt;/ExternalReference&gt;</span>
+  <span class="nt">&lt;Timestamp&gt;</span>2015-01-10T13:30:54.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+<span class="nt">&lt;/ActivityListRequest&gt;</span>
+</code></pre>
+<p>The <strong>ActivityListRequest</strong> enables pulling a list of available activities and options from the specified supplier. The activity list will include descriptive fields, options, and the specific activity value, to be used on subsequent API calls where a single activity is requested by your implementation.</p>
+
+<p>It is the responsibility of any integration to store the unique activity codes for further API calls, where its required.</p>
+
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+<th>Optionality</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ActivityListRequest</td>
+<td></td>
+<td>Root XML node</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>APIKey</td>
+<td>ActivityListRequest</td>
+<td>Your unique API KEY</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ResellerID</td>
+<td>ActivityListRequest</td>
+<td>Your unique reseller ID</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierID</td>
+<td>ActivityListRequest</td>
+<td>Your unique reseller ID</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>ActivityListRequest</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>ActivityListRequest</td>
+<td>Time of creation request YYYY-MM-DDTHH:MM:SS.SSSZ(in utc time) or YYYY-MM-DDTHH:MM:SS.SSS[+/-]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04-28T13:10:12.123+10:00</td>
+<td>Mandatory</td>
+</tr>
+</tbody></table>
+
+<p><strong>Note:</strong> <em>Your implementation must store the returned activity codes for future calls, where required. The ActivityListRequest should be called periodically, since the supplier can update the available activities on the Zaui IO channels anytime, potentially making your stored activity codes stale.</em></p>
+
+<p><strong>Note:</strong> <em>Depending on the number of allowed activities that the supplier your communicating with has provided for you, the data size on this call back can be large. As a result, it’s not uncommon to see this callback having a large data set. This call can often take up to 30 seconds to complete.</em></p>
+<h2 id='activity-list-response'>Activity List Response</h2>
+<blockquote>
+<p>Example Activity List Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;ActivityListResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722994001<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-12-10T13:30:54.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;Tour&gt;</span>
+      <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+      <span class="nt">&lt;SupplierProductName&gt;</span>Zip line Adventure<span class="nt">&lt;/SupplierProductName&gt;</span>
+      <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+      <span class="nt">&lt;TourDuration&gt;</span>PT1D<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;CountryCode&gt;</span>USA<span class="nt">&lt;/CountryCode&gt;</span>
+      <span class="nt">&lt;DestinationCode&gt;</span>WA<span class="nt">&lt;/DestinationCode&gt;</span>
+      <span class="nt">&lt;DestinationName&gt;</span>Washington<span class="nt">&lt;/DestinationName&gt;</span>
+      <span class="nt">&lt;TourDescription&gt;</span>Zip line Adventure that will blow your mind<span class="nt">&lt;/TourDescription&gt;</span>
+      <span class="nt">&lt;TourOption&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1D<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOption&gt;</span>
+      <span class="nt">&lt;PickupLocation&gt;</span>
+         <span class="nt">&lt;SupplierPickupCode&gt;</span>202<span class="nt">&lt;/SupplierPickupCode&gt;</span>
+         <span class="nt">&lt;SupplierPickupName&gt;</span>Hilton<span class="nt">&lt;/SupplierPickupName&gt;</span>
+      <span class="nt">&lt;/PickupLocation&gt;</span>
+      <span class="nt">&lt;DropoffLocation&gt;</span>
+         <span class="nt">&lt;SupplierPickupCode&gt;</span>309<span class="nt">&lt;/SupplierPickupCode&gt;</span>
+         <span class="nt">&lt;SupplierPickupName&gt;</span>Airport – Terminal 2<span class="nt">&lt;/SupplierPickupName&gt;</span>
+      <span class="nt">&lt;/DropoffLocation&gt;</span>
+   <span class="nt">&lt;/Tour&gt;</span>
+   <span class="nt">&lt;Tour&gt;</span>
+      <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+      <span class="nt">&lt;SupplierProductName&gt;</span>Zip line Adventure<span class="nt">&lt;/SupplierProductName&gt;</span>
+      <span class="nt">&lt;TourDepartureTime&gt;</span>09:30:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+      <span class="nt">&lt;TourDuration&gt;</span>PT1D<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;CountryCode&gt;</span>USA<span class="nt">&lt;/CountryCode&gt;</span>
+      <span class="nt">&lt;DestinationCode&gt;</span>WA<span class="nt">&lt;/DestinationCode&gt;</span>
+      <span class="nt">&lt;DestinationName&gt;</span>Washington<span class="nt">&lt;/DestinationName&gt;</span>
+      <span class="nt">&lt;TourDescription&gt;</span>Zip line Adventure that will blow your mind<span class="nt">&lt;/TourDescription&gt;</span>
+      <span class="nt">&lt;TourOption&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:30:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1D<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOption&gt;</span>
+      <span class="nt">&lt;PickupLocation&gt;</span>
+         <span class="nt">&lt;SupplierPickupCode&gt;</span>202<span class="nt">&lt;/SupplierPickupCode&gt;</span>
+         <span class="nt">&lt;SupplierPickupName&gt;</span>Hilton<span class="nt">&lt;/SupplierPickupName&gt;</span>
+      <span class="nt">&lt;/PickupLocation&gt;</span>
+      <span class="nt">&lt;DropoffLocation&gt;</span>
+         <span class="nt">&lt;SupplierPickupCode&gt;</span>309<span class="nt">&lt;/SupplierPickupCode&gt;</span>
+         <span class="nt">&lt;SupplierPickupName&gt;</span>Airport – Terminal 2<span class="nt">&lt;/SupplierPickupName&gt;</span>
+      <span class="nt">&lt;/DropoffLocation&gt;</span>
+   <span class="nt">&lt;/Tour&gt;</span>
+<span class="nt">&lt;/ActivityListResponse&gt;</span>
+
+</code></pre>
+<p>The ActivityListResponse will contain the details for all the activities that the supplier has made available for you to pull across through the Zaui IO API.</p>
+
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ActivityListResponse</td>
+<td></td>
+<td>Root XML node</td>
+</tr>
+<tr>
+<td>APIKey</td>
+<td>ActivityListResponse</td>
+<td>Your unique API KEY</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>ActivityListResponse</td>
+<td>Your unique reseller ID</td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>ActivityListResponse</td>
+<td>String representing the unique supplier ID within the Zaui Marketplace</td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>ActivityListResponse</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>ActivityListResponse</td>
+<td>Time of creation of request YYYY-MM-DDTHH:MM:SS.SSSZ(in utc time) or YYYY-MM-DDTHH:MM:SS.SSS[+/-]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04-28T13:10:12.123+10:00</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>ActivityListResponse</td>
+<td>Request status root XML node, which holds details about the status</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>RequestStatus</td>
+<td>Status of the request. <br><strong>SUCCESS</strong> for a successful transaction <br> <strong>ERROR</strong> for unsuccessful transaction. Error XML node will be provided</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>RequestStatus</td>
+<td>Error root XML node</td>
+</tr>
+<tr>
+<td>ErrorCode</td>
+<td>Error</td>
+<td>The error code</td>
+</tr>
+<tr>
+<td>ErrorMessage</td>
+<td>Error</td>
+<td>The error code</td>
+</tr>
+<tr>
+<td>ErrorDetails</td>
+<td>Error</td>
+<td>String for the error message</td>
+</tr>
+<tr>
+<td>Activity</td>
+<td>ActivityListResponse</td>
+<td>Root activity XML node</td>
+</tr>
+<tr>
+<td>SupplierProductCode</td>
+<td>Activity</td>
+<td>Suppliers unique product code. This will be used across multiple API calls and should be stored as part of your implementation.</td>
+</tr>
+<tr>
+<td>SupplierProductName</td>
+<td>Activity</td>
+<td>String that contains the supplier activity name</td>
+</tr>
+<tr>
+<td>TourDescription</td>
+<td>Activity</td>
+<td>Description of the activity as provided by the supplier.</td>
+</tr>
+<tr>
+<td>TourDepartureTime</td>
+<td>Activity</td>
+<td>Time of the activity. Values will be in the format of HH:MM:SS</td>
+</tr>
+<tr>
+<td>TourDuration</td>
+<td>Activity</td>
+<td>Duration of the activity. Format will be <strong>PnYnMnDTnHnMnS</strong>. Example PT300s (5 mins)</td>
+</tr>
+<tr>
+<td>Tour Option</td>
+<td>Activity</td>
+<td>Root XML node that holds details for options on the activity.</td>
+</tr>
+<tr>
+<td>SupplierOptionCode</td>
+<td>TourOption</td>
+<td>Duration of the activity option. Duration format <strong>PnYnMnDTnHnMnS</strong></td>
+</tr>
+<tr>
+<td>PickupLocation</td>
+<td>Activity</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierPickupCode</td>
+<td>PickupLocation</td>
+<td>Supplier pickup ID code</td>
+</tr>
+<tr>
+<td>SupplierPickupName</td>
+<td>PickupLocation</td>
+<td>Supplier pickup location name as a string</td>
+</tr>
+<tr>
+<td>DropoffLocation</td>
+<td>Activity</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierDropoffCode</td>
+<td>DropoffLocation</td>
+<td>Supplier dropoff ID code</td>
+</tr>
+<tr>
+<td>SupplierDropoffName</td>
+<td>DropoffLocation</td>
+<td>Supplier dropoff location name as a string</td>
+</tr>
+</tbody></table>
+<h2 id='check-availability-requeststatus'>Check Availability RequestStatus</h2>
+<blockquote>
+<p>Example Single Date Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;CheckAvailabilityRequest</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;StartDate&gt;</span>2015-10-31<span class="nt">&lt;/StartDate&gt;</span>
+   <span class="nt">&lt;EndDate</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;TourOptions&gt;</span>
+      <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+      <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+      <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+      <span class="nt">&lt;TourDuration&gt;</span>PT1H<span class="nt">&lt;/TourDuration&gt;</span>
+   <span class="nt">&lt;/TourOptions&gt;</span>
+   <span class="nt">&lt;TravellerMix&gt;</span>
+      <span class="nt">&lt;Senior&gt;</span>0<span class="nt">&lt;/Senior&gt;</span>
+      <span class="nt">&lt;Adult&gt;</span>1<span class="nt">&lt;/Adult&gt;</span>
+      <span class="nt">&lt;Student&gt;</span>0<span class="nt">&lt;/Student&gt;</span>
+      <span class="nt">&lt;Child&gt;</span>1<span class="nt">&lt;/Child&gt;</span>
+      <span class="nt">&lt;Infant&gt;</span>0<span class="nt">&lt;/Infant&gt;</span>
+      <span class="nt">&lt;Total&gt;</span>2<span class="nt">&lt;/Total&gt;</span>
+   <span class="nt">&lt;/TravellerMix&gt;</span>
+<span class="nt">&lt;/CheckAvailabilityRequest&gt;</span>
+</code></pre>
+<blockquote>
+<p>Example Date Range Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;CheckAvailabilityRequest</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;StartDate&gt;</span>2015-10-30<span class="nt">&lt;/StartDate&gt;</span>
+   <span class="nt">&lt;EndDate&gt;</span>2015-10-31<span class="nt">&lt;/EndDate&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;TourOptions&gt;</span>
+      <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+   <span class="nt">&lt;/TourOptions&gt;</span>
+   <span class="nt">&lt;TravellerMix&gt;</span>
+      <span class="nt">&lt;Senior&gt;</span>0<span class="nt">&lt;/Senior&gt;</span>
+      <span class="nt">&lt;Adult&gt;</span>1<span class="nt">&lt;/Adult&gt;</span>
+      <span class="nt">&lt;Student&gt;</span>0<span class="nt">&lt;/Student&gt;</span>
+      <span class="nt">&lt;Child&gt;</span>1<span class="nt">&lt;/Child&gt;</span>
+      <span class="nt">&lt;Infant&gt;</span>0<span class="nt">&lt;/Infant&gt;</span>
+      <span class="nt">&lt;Total&gt;</span>2<span class="nt">&lt;/Total&gt;</span>
+   <span class="nt">&lt;/TravellerMix&gt;</span>
+<span class="nt">&lt;/CheckAvailabilityRequest&gt;</span>
+</code></pre>
+<p>The availability request determines if the requested activity has availability for the specific number of passengers in real-time.</p>
+
+<p>This API call provisions for requesting availability by specifying a specific date, or providing a date range. In either case, the API allows providing tour options optionally.</p>
+
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+<th>Optionality</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CheckAvailabilityRequest</td>
+<td></td>
+<td>Root XML node</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>APIKey</td>
+<td>CheckAvailabilityRequest</td>
+<td>Your unique API KEY</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ResellerID</td>
+<td>CheckAvailabilityRequest</td>
+<td></td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierID</td>
+<td>CheckAvailabilityRequest</td>
+<td>String representing the unique supplier ID within the Zaui Marketplace</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>CheckAvailabilityRequest</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>CheckAvailabilityRequest</td>
+<td>Time of creation of request YYYY-MM-DDTHH:MM:SS.SSSZ(in utc time) or YYYY-MM-DDTHH:MM:SS.SSS[+/-]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04-28T13:10:12.123+10:00</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>StartDate</td>
+<td>CheckAvailabilityRequest</td>
+<td>Date for which to check. Date format: YYYY-MM-DD</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>EndDate</td>
+<td>CheckAvailabilityRequest</td>
+<td>Date for which to end checking. Date format: YYYY-MM-DD</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierProductCode</td>
+<td>CheckAvailabilityRequest</td>
+<td>The unique product code for the supplier</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>TourOptions</td>
+<td>CheckAvailabilityRequest</td>
+<td>Tour option root XML node</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierOptionCode</td>
+<td>TourOptions</td>
+<td>String representing the unique supplier option code</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierOptionName</td>
+<td>TourOptions</td>
+<td>String representing the supplier option name</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TourDepartureTime</td>
+<td>TourOptions</td>
+<td>Time of the activity departure and must be in the format of HH:MM:SS</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TourDuration</td>
+<td>TourOptions</td>
+<td>Option duration, and must be in the format: <strong>PnYnMnDTnHnMnS</strong>.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TravellerMix</td>
+<td>CheckAvailabilityRequest</td>
+<td>Root XML element that contains the details of the passenger types to query for inventory</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>PickupLocation</td>
+<td>CheckAvailabilityRequest</td>
+<td>Root node for the pickup location</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierPickupCode</td>
+<td>PickupLocation</td>
+<td>The pickup location ID, which is returned as part of the ActivityListRequest</td>
+<td>Optional, but required for all transportation based supplier products</td>
+</tr>
+<tr>
+<td>DropoffLocation</td>
+<td>CheckAvailabilityRequest</td>
+<td>Root node for the dropoff location</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierPickupCode</td>
+<td>PickupLocation</td>
+<td>The pickup location ID, which is returned as part of the ActivytListRequest</td>
+<td>Optional, but required for all transportation based supplier product</td>
+</tr>
+<tr>
+<td>Senior</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Adult</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Infant</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+</tbody></table>
+
+<p><strong>Note:</strong> <em>Requests for availability can be requested no further than 120 days out. Inventory is only checked when the date range is less than or equal to 2 weeks. Availability for historical dates are not permitted. Transportation based supplier products may require that you send through the proper pickup and dropoff supplier location codes.</em></p>
+<h2 id='check-availability-response'>Check Availability Response</h2>
+<blockquote>
+<p>Example Single Date Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;CheckAvailabilityResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;TourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-31<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1H<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>AVAILABLE<span class="nt">&lt;/Status&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/TourAvailability&gt;</span>
+   <span class="nt">&lt;TravellerMixAvailability&gt;</span>
+      <span class="nt">&lt;Senior&gt;</span>TRUE<span class="nt">&lt;/Senior&gt;</span>
+      <span class="nt">&lt;Adult&gt;</span>TRUE<span class="nt">&lt;/Adult&gt;</span>
+      <span class="nt">&lt;Student&gt;</span>TRUE<span class="nt">&lt;/Student&gt;</span>
+      <span class="nt">&lt;Child&gt;</span>TRUE<span class="nt">&lt;/Child&gt;</span>
+      <span class="nt">&lt;Infant&gt;</span>FALSE<span class="nt">&lt;/Infant&gt;</span>
+   <span class="nt">&lt;/TravellerMixAvailability&gt;</span>
+<span class="nt">&lt;/CheckAvailabilityResponse&gt;</span>
+</code></pre>
+<blockquote>
+<p>Date Range Example response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;CheckAvailabilityResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;TourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-30<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line at 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>AVAILABLE<span class="nt">&lt;/Status&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/TourAvailability&gt;</span>
+   <span class="nt">&lt;TourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-31<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip Line at 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>UNAVAILABLE<span class="nt">&lt;/Status&gt;</span>
+         <span class="nt">&lt;UnavailabilityReason&gt;</span>SOLD_OUT<span class="nt">&lt;/UnavailabilityReason&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/TourAvailability&gt;</span>
+<span class="nt">&lt;/CheckAvailabilityResponse&gt;</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CheckAvailabilityResponse</td>
+<td></td>
+<td>Root XML Node</td>
+</tr>
+<tr>
+<td>APIKey</td>
+<td>CheckAvailabilityResponse</td>
+<td>Your unique API KEY</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>CheckAvailabilityResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierID</td>
+<td>CheckAvailabilityResponse</td>
+<td>String representing the unique supplier ID within the Zaui Marketplace</td>
+</tr>
+<tr>
+<td>External Reference</td>
+<td>CheckAvailabilityResponse</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>CheckAvailabilityResponse</td>
+<td>Time of creation of request: <br> YYYY-MM-DDTHH:MM:SS.SSSZ(in utc time) or YYYY-MM-DDTHH:MM:SS.SSS[+/-]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04-28T13:10:12.123+10:00</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>CheckAvailabilityResponse</td>
+<td>Request status root XML element</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>RequestStatus</td>
+<td>Status value for the request. Values are:<br> <strong>SUCCESS</strong> <br><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>Error</td>
+<td>Request Status</td>
+<td>Root node for the error details on a non successful request.</td>
+</tr>
+<tr>
+<td>ErrorCode</td>
+<td>Error</td>
+<td>String with error code.</td>
+</tr>
+<tr>
+<td>ErrorMessage</td>
+<td>Error</td>
+<td>String with the error message</td>
+</tr>
+<tr>
+<td>ErrorDetails</td>
+<td>Error</td>
+<td>String with additional details, and recommendation on error</td>
+</tr>
+<tr>
+<td>SupplierProductCode</td>
+<td>CheckAvailabilityResponse</td>
+<td>Unique supplier product code</td>
+</tr>
+<tr>
+<td>TourAvailability</td>
+<td>CheckAvailabilityResponse</td>
+<td>Root node with the tour availability</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>TourAvailability</td>
+<td>Date for which the tour is available, in the format YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>TourOptions</td>
+<td>TourAvailability</td>
+<td>Tour options root node</td>
+</tr>
+<tr>
+<td>SupplierOptionCode</td>
+<td>TourOptions</td>
+<td>String containing the unique supplier option code</td>
+</tr>
+<tr>
+<td>SupplierOptionName</td>
+<td>TourOptions</td>
+<td>String containing the supplier option name</td>
+</tr>
+<tr>
+<td>TourDepartureTime</td>
+<td>TourOptions</td>
+<td>Time of the tour departure, in the format HH:MM:SS</td>
+</tr>
+<tr>
+<td>TourDuration</td>
+<td>TourOptions</td>
+<td>Duration for the tour option, in the format <strong>PnYnMnDTnHnMnS</strong>. Example: PT300s (5 mins).</td>
+</tr>
+<tr>
+<td>AvailabilityStatus</td>
+<td>CheckAvailabilityResponse</td>
+<td>Root element for availability status</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Availability Status</td>
+<td>Status of the availability request. Values are: <br> <strong>AVAILABLE</strong> - when available for the given Date and TravellerMix. <br> <strong>UNAVAILABLE</strong> - when not available for the given Date and TravellerMix.</td>
+</tr>
+<tr>
+<td>UnavailabilityReason</td>
+<td>AvailabilityStatus</td>
+<td>Reason why the requested activity is NOT available. Valid values: <br> <strong>SOLD_OUT</strong> <br> <strong>BLOCKED_OUT</strong> - when the product (Tour)/ product option (Tour Option) has been blocked out (not taking place on this date). <br> <strong>INACTIVE</strong> - when the product (Tour)/ product option (Tour Option) is no longer active. Recommend a ActivityListRequest to refresh the supplier product codes <br> <strong>PAST_CUTOFF_DATE</strong> - when the booking cut-off date has been reach for this product (Tour)/ product option (Tour Option). <br> <strong>TRAVELLER_MISMATCH</strong> - when the required combination of travellers for this product (Tour)/ product option (Tour Option) is not met.</td>
+</tr>
+<tr>
+<td>TravellerMixAvailability</td>
+<td>CheckAvailabilityResponse</td>
+<td>Guest mix availability root element</td>
+</tr>
+<tr>
+<td>Senior</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Adult</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Child</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Infant</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+</tbody></table>
+<h2 id='batch-check-availability-request'>Batch Check Availability Request</h2>
+<blockquote>
+<p>Example Single Day Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BatchCheckAvailabilityRequest</span>  <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;ApiKey&gt;</span>cdqu60CykKeca1Qc000VXwgchV000L2fNOOf0bv9gPp<span class="nt">&lt;/ApiKey&gt;</span>
+ <span class="nt">&lt;ResellerId&gt;</span>2005<span class="nt">&lt;/ResellerId&gt;</span>
+ <span class="nt">&lt;SupplierId&gt;</span>200<span class="nt">&lt;/SupplierId&gt;</span>
+ <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+ <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+ <span class="nt">&lt;StartDate&gt;</span>2015-10-1<span class="nt">&lt;/StartDate&gt;</span>
+ <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+<span class="nt">&lt;/BatchCheckAvailabilityRequest&gt;</span>
+</code></pre>
+<blockquote>
+<p>Example Multi Date Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BatchCheckAvailabilityRequest</span>  <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+  <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+  <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+  <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+  <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+  <span class="nt">&lt;StartDate&gt;</span>2015-10-1<span class="nt">&lt;/StartDate&gt;</span>
+  <span class="nt">&lt;EndDate&gt;</span>2015-10-31<span class="nt">&lt;/EndDate&gt;</span>
+  <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+<span class="nt">&lt;/BatchCheckAvailabilityRequest&gt;</span>
+</code></pre>
+<p>The batch availability request allows you to determine availability in large scale. This API call is designed to enable fetching all activity and activity options for a single date or date range. When a single activity is provided, then the API will return the activity availability for the date or date range requested. When a activity is not provided, then the API will return all activities and options for the date or date range requested.</p>
+
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+<th>Optionality</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BatchCheckAvailabilityRequest</td>
+<td></td>
+<td>Root XML node</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>Your unique API KEY</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td></td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>String representing the unique supplier ID within the Zaui Marketplace</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>Time of creation of request YYYY-MM-DDTHH:MM:SS.SS SZ(in utc time) or YYYY-MM-DDTHH:MM:SS.SS S[+/-]HH:MM Example: <br> 2013-04- 28T13:10:12.123Z (utc time) <br> 2013-04- 28T13:10:12.123+10:00</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>StartDate</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>Date for which to check. Date format: YYYY-MM-DD</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>EndDate</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>Date for which to end checking. Date format: YYYY-MM-DD</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierProductCode</td>
+<td>BatchCheckAvailabilityRequest</td>
+<td>The unique product code for the supplier</td>
+<td>Mandatory</td>
+</tr>
+</tbody></table>
+
+<p><strong>Note:</strong> <em>Requests for batch availability can be requested no further than 120 days out. Batch Availability for historical dates are not permitted.
+Dates ranges between the StartDate and EndDate cannot be more then 120 days.</em></p>
+<h2 id='batch-check-availability-response'>Batch Check Availability Response</h2>
+<blockquote>
+<p>Example Single Date Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BatchCheckAvailabilityResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;StartDate&gt;</span>2015-10-1<span class="nt">&lt;/StartDate&gt;</span>
+   <span class="nt">&lt;EndDate&gt;</span>2015-10-31<span class="nt">&lt;/EndDate&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;StartDate&gt;</span>2015-10-1<span class="nt">&lt;/StartDate&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;BatchTourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-1<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip Line 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1Hn<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>UNAVAILABLE<span class="nt">&lt;/Status&gt;</span>
+         <span class="nt">&lt;UnavailabilityReason&gt;</span>SOLD_OUT<span class="nt">&lt;/UnavailabilityReason&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/BatchTourAvailability&gt;</span>
+   <span class="nt">&lt;BatchTourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-1<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>10:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip Line 10:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>10:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1Hn<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>AVAILABLE<span class="nt">&lt;/Status&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/BatchTourAvailability&gt;</span>
+<span class="nt">&lt;/BatchCheckAvailabilityResponse&gt;</span>
+</code></pre>
+<blockquote>
+<p>Example Date Range Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BatchCheckAvailabilityResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;StartDate&gt;</span>2015-10-1<span class="nt">&lt;/StartDate&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;BatchTourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-30<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1Hn<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>UNAVAILABLE<span class="nt">&lt;/Status&gt;</span>
+         <span class="nt">&lt;UnavailabilityReason&gt;</span>SOLD_OUT<span class="nt">&lt;/UnavailabilityReason&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/BatchTourAvailability&gt;</span>
+   <span class="nt">&lt;BatchTourAvailability&gt;</span>
+      <span class="nt">&lt;Date&gt;</span>2015-10-31<span class="nt">&lt;/Date&gt;</span>
+      <span class="nt">&lt;TourOptions&gt;</span>
+         <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+         <span class="nt">&lt;SupplierOptionName&gt;</span>Zip Line 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+         <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+         <span class="nt">&lt;TourDuration&gt;</span>PT1Hn<span class="nt">&lt;/TourDuration&gt;</span>
+      <span class="nt">&lt;/TourOptions&gt;</span>
+      <span class="nt">&lt;AvailabilityStatus&gt;</span>
+         <span class="nt">&lt;Status&gt;</span>UNAVAILABLE<span class="nt">&lt;/Status&gt;</span>
+         <span class="nt">&lt;UnavailabilityReason&gt;</span>SOLD_OUT<span class="nt">&lt;/UnavailabilityReason&gt;</span>
+      <span class="nt">&lt;/AvailabilityStatus&gt;</span>
+   <span class="nt">&lt;/BatchTourAvailability&gt;</span>
+<span class="nt">&lt;/BatchCheckAvailabilityResponse&gt;</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BatchCheckAvailabilityResponse</td>
+<td></td>
+<td>Root XML node</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td>Your unique API KEY</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td>Time of creation of request YYYY-MM- DD HH:MM:SS.SSSZ(in utc time) or YYYY-MM-DD HH:MM:SS.SSS[+/- ]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04- 28T13:10:12.123+10:00</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td>Request status root XML element</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>RequestStatus</td>
+<td>Status value for the request. Values are: <br> <strong>SUCCESS</strong> <br> <strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>Error</td>
+<td>RequestStatus</td>
+<td>Root node for the error details on a non- successful request</td>
+</tr>
+<tr>
+<td>ErrorCode</td>
+<td>Error</td>
+<td>String with the error code</td>
+</tr>
+<tr>
+<td>ErrorMessage</td>
+<td>Error</td>
+<td>String with the error message</td>
+</tr>
+<tr>
+<td>ErrorDetails</td>
+<td>Error</td>
+<td>String with additional details, and recommendation on error</td>
+</tr>
+<tr>
+<td>BatchTourAvailability</td>
+<td>BatchCheckAvailabilityResponse</td>
+<td>Availability root node.</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>BatchTourAvailability</td>
+<td>Date for which the availability is supplied in the format YYYY- MM-DD</td>
+</tr>
+<tr>
+<td>SupplierProductCode</td>
+<td>BatchTourAvailability</td>
+<td>Unique supplier product code</td>
+</tr>
+<tr>
+<td>TourOptions</td>
+<td>BatchTourAvailability</td>
+<td>Tour options root node</td>
+</tr>
+<tr>
+<td>SupplierOptionCode</td>
+<td>TourOptions</td>
+<td>String containing the unique supplier option code</td>
+</tr>
+<tr>
+<td>TourDepartureTime</td>
+<td>TourOptions</td>
+<td>Time of the tour departure, in the format HH:MM:SS</td>
+</tr>
+<tr>
+<td>TourDuration</td>
+<td>TourOptions</td>
+<td>Duration for the tour option, in the format of <strong>PnYnMnDTnHnMnS</strong>. Example: PT300S (5 minutes).</td>
+</tr>
+<tr>
+<td>AvailabilityStatus</td>
+<td>BatchTourAvailability</td>
+<td>Root element for availability status</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>AvailabilityStatus</td>
+<td>Status of the availability request. Values are: <br> <strong>AVAILABLE</strong> - when available for the given Date and TravellerMix. <br> <strong>UNAVAILABLE</strong> - when not available for the given Date and TravellerMix.</td>
+</tr>
+<tr>
+<td>UnavailabilityReason</td>
+<td>AvailabilityStatus</td>
+<td>Reason why the requested activity is NOT available. Valid values: <br> <strong>SOLD_OUT</strong> <br> <strong>BLOCKED_OUT</strong> - when the product (Tour)/ product option (Tour Option) has been blocked out (not taking place on this date). <br> <strong>INACTIVE</strong> - when the product (Tour)/ product option (Tour Option) is no longer active. Recommend a ActivityListRequest to refresh the supplier product codes <br> <strong>PAST_CUTOFF_DATE</strong> - when the booking cut-off date has been reach for this product (Tour)/ product option (Tour Option). <br> <strong>TRAVELLER_MISMATCH</strong> - when the required combination of travellers for this product (Tour)/ product option (Tour Option) is not met.</td>
+</tr>
+<tr>
+<td>TravellerMixAvailability</td>
+<td>BatchTourAvailability</td>
+<td>Guest mix availability root element</td>
+</tr>
+<tr>
+<td>Senior</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Adult</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Child</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+<tr>
+<td>Infant</td>
+<td>TravellerMixAvailability</td>
+<td>TRUE or FALSE</td>
+</tr>
+</tbody></table>
+<h2 id='booking-create-response'>Booking Create Response</h2>
+<blockquote>
+<p>Example Booking Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BookingCreateResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;BookingReference&gt;</span>999999999<span class="nt">&lt;/BookingReference&gt;</span>
+   <span class="nt">&lt;TransactionStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>CONFIRMED<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/TransactionStatus&gt;</span>
+   <span class="nt">&lt;SupplierConfirmationNumber&gt;</span>1635213<span class="nt">&lt;/SupplierConfirmationNumber&gt;</span>
+<span class="nt">&lt;/BookingCreateResponse&gt;</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BookingCreateResponse</td>
+<td></td>
+<td>Root node</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BookingCreateResponse</td>
+<td>Your unique API KEY</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BookingCreateResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BookingCreateResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BookingCreateResponse</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BookingCreateResponse</td>
+<td>Time of creation of request YYYY-MM- DD HH:MM:SS.SSSZ(in utc time) or YYYY-MM-DD HH:MM:SS.SSS[+/- ]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04- 28T13:10:12.123+10:00</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>BookingCreateResponse</td>
+<td>Request status root XML element</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>RequestStatus</td>
+<td>Status value for the request. Values are: <br> <strong>SUCCESS</strong> <br> <strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>Error</td>
+<td>RequestStatus</td>
+<td>Root node for the error details on a non- successful request</td>
+</tr>
+<tr>
+<td>ErrorCode</td>
+<td>Error</td>
+<td>String with the error code</td>
+</tr>
+<tr>
+<td>ErrorMessage</td>
+<td>Error</td>
+<td>String with the error message</td>
+</tr>
+<tr>
+<td>ErrorDetails</td>
+<td>Error</td>
+<td>String with additional details, and recommendation on error</td>
+</tr>
+<tr>
+<td>BookingReference</td>
+<td>BookingCreateResponse</td>
+<td>String containing the unique booking reference from your system</td>
+</tr>
+<tr>
+<td>TransactionStatus</td>
+<td>BookingCreateResponse</td>
+<td>Root node that holds data on the transaction</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>TransactionStatus</td>
+<td>Status of the transition. Options are: <br> <strong>CONFIRMED</strong> <br> <strong>REJECTED</strong></td>
+</tr>
+<tr>
+<td>RejectionReasonDetails</td>
+<td>TransactionStatus</td>
+<td>Extended details on the transaction rejection</td>
+</tr>
+<tr>
+<td>RejectionReason</td>
+<td>TransactionStatus</td>
+<td>Reason transaction was rejected. Options are: <br> <strong>NOT_OPERATING</strong> - Tour is not operating on the date for which the booking was made. <br> <strong>OTHER</strong> - Any other reason. Details must be provided in Rejection- ReasonDetails.</td>
+</tr>
+<tr>
+<td>SupplierConfirmationNumber</td>
+<td>BookingCreateResponse</td>
+<td>String holding the unique supplier confirmation number. This number must be used on subsequent booking API calls, such as amend, cancel.</td>
+</tr>
+<tr>
+<td>SupplierConfirmationPromotionCode</td>
+<td>BookingCreateResponse</td>
+<td>Auto generated promotion code, that provides an online redemption mechanism with the Suppliers system</td>
+</tr>
+</tbody></table>
+<h2 id='booking-update-request'>Booking Update Request</h2>
+<blockquote>
+<p>Example Update Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BookingUpdateRequest</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;BookingReference&gt;</span>999999999<span class="nt">&lt;/BookingReference&gt;</span>
+   <span class="nt">&lt;TravelDate&gt;</span>2015-12-10<span class="nt">&lt;/TravelDate&gt;</span>
+   <span class="nt">&lt;SupplierProductCode&gt;</span>ACT_1765<span class="nt">&lt;/SupplierProductCode&gt;</span>
+   <span class="nt">&lt;TourOptions&gt;</span>
+      <span class="nt">&lt;SupplierOptionCode&gt;</span>09:00:00<span class="nt">&lt;/SupplierOptionCode&gt;</span>
+      <span class="nt">&lt;SupplierOptionName&gt;</span>Zip line 9:00 am<span class="nt">&lt;/SupplierOptionName&gt;</span>
+      <span class="nt">&lt;TourDepartureTime&gt;</span>09:00:00<span class="nt">&lt;/TourDepartureTime&gt;</span>
+      <span class="nt">&lt;TourDuration&gt;</span>PT1H<span class="nt">&lt;/TourDuration&gt;</span>
+   <span class="nt">&lt;/TourOptions&gt;</span>
+   <span class="nt">&lt;Inclusions&gt;</span>
+      <span class="nt">&lt;Inclusion&gt;</span>Bottle of Champagne<span class="nt">&lt;/Inclusion&gt;</span>
+      <span class="nt">&lt;Inclusion&gt;</span>Hotel Pickup<span class="nt">&lt;/Inclusion&gt;</span>
+   <span class="nt">&lt;/Inclusions&gt;</span>
+   <span class="nt">&lt;Traveller&gt;</span>
+      <span class="nt">&lt;TravellerIdentifier&gt;</span>1<span class="nt">&lt;/TravellerIdentifier&gt;</span>
+      <span class="nt">&lt;TravellerTitle&gt;</span>Mr.<span class="nt">&lt;/TravellerTitle&gt;</span>
+      <span class="nt">&lt;GivenName&gt;</span>Phil<span class="nt">&lt;/GivenName&gt;</span>
+      <span class="nt">&lt;Surname&gt;</span>Dover<span class="nt">&lt;/Surname&gt;</span>
+      <span class="nt">&lt;AgeBand&gt;</span>ADULT<span class="nt">&lt;/AgeBand&gt;</span>
+      <span class="nt">&lt;LeadTraveller&gt;</span>true<span class="nt">&lt;/LeadTraveller&gt;</span>
+   <span class="nt">&lt;/Traveller&gt;</span>
+   <span class="nt">&lt;TravellerMix&gt;</span>
+      <span class="nt">&lt;Senior&gt;</span>0<span class="nt">&lt;/Senior&gt;</span>
+      <span class="nt">&lt;Adult&gt;</span>1<span class="nt">&lt;/Adult&gt;</span>
+      <span class="nt">&lt;Child&gt;</span>0<span class="nt">&lt;/Child&gt;</span>
+      <span class="nt">&lt;Student&gt;</span>0<span class="nt">&lt;/Student&gt;</span>
+      <span class="nt">&lt;Infant&gt;</span>0<span class="nt">&lt;/Infant&gt;</span>
+      <span class="nt">&lt;Total&gt;</span>1<span class="nt">&lt;/Total&gt;</span>
+   <span class="nt">&lt;/TravellerMix&gt;</span>
+   <span class="nt">&lt;RequiredInfo&gt;</span>
+      <span class="nt">&lt;Question&gt;</span>
+         <span class="nt">&lt;QuestionText&gt;</span>Passport No.<span class="nt">&lt;/QuestionText&gt;</span>
+         <span class="nt">&lt;QuestionText&gt;</span>L99999<span class="nt">&lt;/QuestionText&gt;</span>
+      <span class="nt">&lt;/Question&gt;</span>
+   <span class="nt">&lt;/RequiredInfo&gt;</span>
+   <span class="nt">&lt;SpecialRequirement&gt;</span>Vegetarian Meal<span class="nt">&lt;/SpecialRequirement&gt;</span>
+   <span class="nt">&lt;PickupPoint&gt;</span>Hilton<span class="nt">&lt;/PickupPoint&gt;</span>
+   <span class="nt">&lt;SupplierNote&gt;</span>Change to number of travellers. Customer reimbursed.<span class="nt">&lt;/SupplierNote&gt;</span>
+   <span class="nt">&lt;AdditionalRemarks&gt;</span>
+      <span class="nt">&lt;Remark&gt;</span>Additional charges for large luggage may apply. To be advised at pickup.<span class="nt">&lt;/Remark&gt;</span>
+   <span class="nt">&lt;/AdditionalRemarks&gt;</span>
+   <span class="nt">&lt;ContactDetail&gt;</span>
+      <span class="nt">&lt;ContactType&gt;</span>MOBILE<span class="nt">&lt;/ContactType&gt;</span>
+      <span class="nt">&lt;ContactName&gt;</span>Phil Dover<span class="nt">&lt;/ContactName&gt;</span>
+      <span class="nt">&lt;ContactValue&gt;</span>US+1 999999999<span class="nt">&lt;/ContactValue&gt;</span>
+   <span class="nt">&lt;/ContactDetail&gt;</span>
+   <span class="nt">&lt;PickupLocation&gt;</span>
+      <span class="nt">&lt;SupplierPickupCode&gt;</span>209<span class="nt">&lt;/SupplierPickupCode&gt;</span>
+   <span class="nt">&lt;/PickupLocation&gt;</span>
+   <span class="nt">&lt;DropoffLocation&gt;</span>
+      <span class="nt">&lt;SupplierDropoffCode&gt;</span>219<span class="nt">&lt;/SupplierDropoffCode&gt;</span>
+   <span class="nt">&lt;/DropoffLocation&gt;</span>
+   <span class="nt">&lt;SupplierConfirmationNumber&gt;</span>125467<span class="nt">&lt;/SupplierConfirmationNumber&gt;</span>
+<span class="nt">&lt;/BookingUpdateRequest&gt;</span>
+</code></pre>
+<p>The booking amendment request allows you to submit amendments to existing bookings created through your implementation in the supplier system. To request a booking to be changed, your request must submit through a valid booking reference number, and that booking must have been originally created through your implementation. Each booking amendment is for a single booking only.</p>
+
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+<th>Optionality</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BookingUpdateRequest</td>
+<td></td>
+<td>Root XML node</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BookingUpdateRequest</td>
+<td>Your unique API KEY</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BookingUpdateRequest</td>
+<td></td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BookingUpdateRequest</td>
+<td>String representing the unique supplier ID within the Zaui Marketplace</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BookingUpdateRequest</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BookingUpdateRequest</td>
+<td>Time of creation of request YYYY-MM-DD HH:MM:SS.SSSZ(in utc time) or YYYY-MM-DD HH:MM:SS.SSS[+/- ]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04- 28T13:10:12.123+10:00</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>BookingReference</td>
+<td>BookingUpdateRequest</td>
+<td>Unique booking reference</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>TravelDate</td>
+<td>BookingUpdateRequest</td>
+<td>Date of travel for the itinerary item. Date must be in the format YYYY-MM-DD</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierProductCode</td>
+<td>BookingUpdateRequest</td>
+<td>The unique product code for the supplier</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>TourOptions</td>
+<td>BookingUpdateRequest</td>
+<td>Root tour options XML node</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierOptionCode</td>
+<td>TourOptions</td>
+<td>Unique option code</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierOptionName</td>
+<td>TourOptions</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TourDepartureTime</td>
+<td>TourOptions</td>
+<td>Time of activity departure. Must be in the format of HH:MM:SS</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TourDuration</td>
+<td>TourOptions</td>
+<td>Duration of activity option. Must be in the format of <strong>PnYnMnDTnHnMnS</strong>.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Traveller</td>
+<td>BookingUpdateRequest</td>
+<td>Root XML element describing the customer details</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>travellerIdentifier</td>
+<td>Traveller</td>
+<td>Unique integer per traveller for the booking</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>GivenName</td>
+<td>Traveller</td>
+<td>Guest first name</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Surname</td>
+<td>Traveller</td>
+<td>Guest last name</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>AgeBand</td>
+<td>Traveller</td>
+<td>Age band for the traveller. Valid values are: <br> • Senior <br> • Adult <br> • Student <br> • Child <br> • Infant</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>TravellerMix</td>
+<td>BookingUpdateRequest</td>
+<td>Root XML element describing the number of travellers</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Senior</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Adult</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Child</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Infant</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>TravellerMix</td>
+<td></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>RequiredInfo</td>
+<td>BookingUpdateRequest</td>
+<td>Root XML node that will hold additional booking questions/answers for the booking</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Question</td>
+<td>RequiredInfo</td>
+<td>String holding the question</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>QuestionText</td>
+<td>RequiredInfo</td>
+<td>String holding the question text</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>QuestionAnswer</td>
+<td>RequiredInfo</td>
+<td>Answer text supplied</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SpecialRequirement</td>
+<td>BookingUpdateRequest</td>
+<td>String wit any special requirements from the customer</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>PickupPoint</td>
+<td>BookingUpdateRequest</td>
+<td>String value with the pickup point supplied</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>SupplierNote</td>
+<td>BookingUpdateRequest</td>
+<td>String value with any supplier notes passed from your implementation</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>AdditionalRemarks</td>
+<td>BookingUpdateRequest</td>
+<td>Root XML node with additional remarks</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Remark</td>
+<td>AdditionalRemarks</td>
+<td>String with the remark</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>ContactDetail</td>
+<td>BookingUpdateRequest</td>
+<td>Root XML node holding customer contact details</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>ContactType</td>
+<td>ContactDetail</td>
+<td>Type of contact. Options are: <br> • MOBILE <br> • EMAIL <br> • ALTERNATE <br> • NOT_CONTACTABLE</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>ContactDetail</td>
+<td>String with name of contact</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>ContactValue</td>
+<td>ContactDetail</td>
+<td>String with the contact information (name, email, phone..etc)</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>PickupLocation</td>
+<td>BookingRequest</td>
+<td>Root node for the pickup location</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierPickupCode</td>
+<td>PickupLocation</td>
+<td>The pickup location ID, which is returned as part of the ActivityListRequest</td>
+<td>Optional, but required for all transportation based supplier product</td>
+</tr>
+<tr>
+<td>DropoffLocation</td>
+<td>BookingRequest</td>
+<td>Root node for the dropoff location</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierDropoffCode</td>
+<td>DropoffLocation</td>
+<td>The dropoff location ID</td>
+<td>Optional but required for all transportation based supplier product</td>
+</tr>
+<tr>
+<td>SupplierConfirmationNumber</td>
+<td>BookingUpdateRequest</td>
+<td>String that holds the unique supplier confirmation number. The SupplierConfirmationNumber is used in all subsequent request pertaining to he booking, and must be stored in your implementation.</td>
+<td>Mandatory</td>
+</tr>
+</tbody></table>
+<h2 id='booking-update-response'>Booking Update Response</h2>
+<blockquote>
+<p>Example Booking Update Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BookingUpdateResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;BookingReference&gt;</span>999999999<span class="nt">&lt;/BookingReference&gt;</span>
+   <span class="nt">&lt;TransactionStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>CONFIRMED<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/TransactionStatus&gt;</span>
+   <span class="nt">&lt;SupplierConfirmationNumber&gt;</span>1235458<span class="nt">&lt;/SupplierConfirmationNumber&gt;</span>
+<span class="nt">&lt;/BookingUpdateResponse&gt;</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BookingUpdateResponse</td>
+<td></td>
+<td>Root XML node</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BookingUpdateResponse</td>
+<td>Your unique API KEY</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BookingUpdateResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BookingUpdateResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BookingUpdateResponse</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BookingUpdateResponse</td>
+<td>Time of creation of request YYYY-MM- DD HH:MM:SS.SSSZ(in utc time) or YYYY-MM-DD HH:MM:SS.SSS[+/- ]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04- 28T13:10:12.123+10:00</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>BookingUpdateResponse</td>
+<td>Request status root XML element</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>RequestStatus</td>
+<td>Status value for the request. Values are: <br> <strong>SUCCESS</strong><br> <strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>Error</td>
+<td>RequestStatus</td>
+<td>Root node for the error details on a non-successful request</td>
+</tr>
+<tr>
+<td>ErrorCode</td>
+<td>Error</td>
+<td>String with the error code</td>
+</tr>
+<tr>
+<td>ErrorMessage</td>
+<td>Error</td>
+<td>String with the error message</td>
+</tr>
+<tr>
+<td>ErrorDetails</td>
+<td>Error</td>
+<td>String with additional details, and recommendation on error</td>
+</tr>
+<tr>
+<td>BookingReference</td>
+<td>BookingUpdateResponse</td>
+<td>String containing the unique booking reference from your system</td>
+</tr>
+<tr>
+<td>TransactionStatus</td>
+<td>BookingUpdateResponse</td>
+<td>Root node that holds data on the transaction</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>TransactionStatus</td>
+<td>Status of the transition. Options are: <br><strong>CONFIRMED</strong><br><strong>REJECTED</strong></td>
+</tr>
+<tr>
+<td>RejectionReasonDetails</td>
+<td>TransactionStatus</td>
+<td>Extended details on the transaction rejection</td>
+</tr>
+<tr>
+<td>RejectionReason</td>
+<td>TransactionStatus</td>
+<td>Reason transaction was rejected. Options are: <br> <strong>NOT_OPERATING</strong> – Activity not offered on requested date <br> <strong>OTHER</strong> - Any other reason. Details must be provided in RejectionReasonDetails.</td>
+</tr>
+<tr>
+<td>SupplierConfirmationNumber</td>
+<td>BookingUpdateResponse</td>
+<td>String value of the unique supplier confirmation number. This supplier confirmation number is used in all subsequent booking requests to reference the supplier booking number. <br> <strong>NOTE:</strong> the supplier confirmation number must be the number of the original booking request.</td>
+</tr>
+</tbody></table>
+<h2 id='booking-cancel-request'>Booking Cancel Request</h2>
+<blockquote>
+<p>Example Booking Cancel Request</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BookingUpdateResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;BookingReference&gt;</span>999999999<span class="nt">&lt;/BookingReference&gt;</span>
+   <span class="nt">&lt;TransactionStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>CONFIRMED<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/TransactionStatus&gt;</span>
+   <span class="nt">&lt;SupplierConfirmationNumber&gt;</span>1235458<span class="nt">&lt;/SupplierConfirmationNumber&gt;</span>
+<span class="nt">&lt;/BookingUpdateResponse&gt;</span>
+</code></pre>
+<p>The booking cancellation request allows your implementation to cancel previously made bookings, successfully created through your implementation, directly into the supplier system. The API allows cancellation of the booking.</p>
+
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+<th>Optionality</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BookingCancelRequest</td>
+<td></td>
+<td>Root XML node</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BookingCancelRequest</td>
+<td>Your unique API KEY</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BookingCancelRequest</td>
+<td></td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BookingCancelRequest</td>
+<td>String representing the unique supplier ID within the Zaui Marketplace</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BookingCancelRequest</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BookingCancelRequest</td>
+<td>Time of creation of request YYYY-MM- DD HH:MM:SS.SSSZ(in utc time) or YYYY-MM-DD HH:MM:SS.SSS[+/- ]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04- 28T13:10:12.123+10:00</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>BookingReference</td>
+<td>BookingCancelRequest</td>
+<td>Unique booking reference</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierConfimationNumber</td>
+<td>BookingCancelRequest</td>
+<td>Supplier confirmation number</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>CancelDate</td>
+<td>BookingCancelRequest</td>
+<td>Date the cancellation was made. Must be in the format YYYY-MM- DD</td>
+<td></td>
+</tr>
+<tr>
+<td>Mandatory</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Author</td>
+<td>BookingCancelRequest</td>
+<td>String holding the name of person whom made the cancellation</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Reason</td>
+<td>BookingCancelRequest</td>
+<td>String holding the reason for cancellation</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>SupplierNote</td>
+<td>BookingCancelRequest</td>
+<td>String holding any additional notes about the cancellation</td>
+<td>Mandatory</td>
+</tr>
+</tbody></table>
+<h2 id='booking-cancel-response'>Booking Cancel Response</h2>
+<blockquote>
+<p>Example Booking Cancel Response</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;BookingCancelResponse</span> <span class="na">xmlns=</span><span class="s">"https://api.zaui.io/api/01"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ApiKey&gt;</span>{yourApiKey}<span class="nt">&lt;/ApiKey&gt;</span>
+   <span class="nt">&lt;ResellerId&gt;</span>{yourResellerId}<span class="nt">&lt;/ResellerId&gt;</span>
+   <span class="nt">&lt;SupplierId&gt;</span>{theZauiSupplierId}<span class="nt">&lt;/SupplierId&gt;</span>
+   <span class="nt">&lt;ExternalReference&gt;</span>10051374722992616<span class="nt">&lt;/ExternalReference&gt;</span>
+   <span class="nt">&lt;Timestamp&gt;</span>2015-07-25T13:29:52.616+10:00<span class="nt">&lt;/Timestamp&gt;</span>
+   <span class="nt">&lt;RequestStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>SUCCESS<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/RequestStatus&gt;</span>
+   <span class="nt">&lt;BookingReference&gt;</span>999999999<span class="nt">&lt;/BookingReference&gt;</span>
+   <span class="nt">&lt;SupplierConfirmationNumber&gt;</span>1236578<span class="nt">&lt;/SupplierConfirmationNumber&gt;</span>
+   <span class="nt">&lt;SupplierCancellationNumber&gt;</span>CANCEL78910<span class="nt">&lt;/SupplierCancellationNumber&gt;</span>
+   <span class="nt">&lt;TransactionStatus&gt;</span>
+      <span class="nt">&lt;Status&gt;</span>CONFIRMED<span class="nt">&lt;/Status&gt;</span>
+   <span class="nt">&lt;/TransactionStatus&gt;</span>
+<span class="nt">&lt;/BookingCancelResponse&gt;</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>XML Node</th>
+<th>Parent Node</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BookingCancelResponse</td>
+<td></td>
+<td>Root node</td>
+</tr>
+<tr>
+<td>ApiKey</td>
+<td>BookingCancelResponse</td>
+<td>Your unique API KEY</td>
+</tr>
+<tr>
+<td>ResellerId</td>
+<td>BookingCancelResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>SupplierId</td>
+<td>BookingCancelResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>ExternalReference</td>
+<td>BookingCancelResponse</td>
+<td>String representing a unique transaction ID. Used to identify your original request.</td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>BookingCancelResponse</td>
+<td>Time of creation of request YYYY-MM- DD HH:MM:SS.SSSZ(in utc time) or YYYY-MM-DD HH:MM:SS.SSS[+/- ]HH:MM Example: 2013-04-28T13:10:12.123Z (utc time) 2013-04- 28T13:10:12.123+10:00</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>BookingCancelResponse</td>
+<td>Request status root XML element</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>RequestStatus</td>
+<td>Status value for the request. Values are: <br> <strong>SUCCESS</strong><br><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>Error</td>
+<td>RequestStatus</td>
+<td>Root node for the error details on a non-successful request</td>
+</tr>
+<tr>
+<td>ErrorCode</td>
+<td>Error</td>
+<td>String with the error code</td>
+</tr>
+<tr>
+<td>ErrorMessage</td>
+<td>Error</td>
+<td>String with the error message</td>
+</tr>
+<tr>
+<td>ErrorDetails</td>
+<td>Error</td>
+<td>String with additional details, and recommendation on error</td>
+</tr>
+<tr>
+<td>BookingReference</td>
+<td>BookingCancelResponse</td>
+<td>String containing the unique booking reference from your system.</td>
+</tr>
+<tr>
+<td>SupplierConfirmationNumber</td>
+<td>BookingCancelResponse</td>
+<td>String holding the original unique supplier confirmation number.</td>
+</tr>
+<tr>
+<td>SupplierCancellationNumber</td>
+<td>BookingCancelResponse</td>
+<td>String holding the unique cancellation number</td>
+</tr>
+<tr>
+<td>TransactionStatus</td>
+<td>BookingCancelResponse</td>
+<td>Root node that holds data on the transaction</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>TransactionStatus</td>
+<td>Status of the transition. Options are:<br><strong>CONFIRMED</strong><br> <strong>REJECTED</strong></td>
+</tr>
+<tr>
+<td>RejectionReasonDetails</td>
+<td>TransactionStatus</td>
+<td>Extended details on the transaction rejection</td>
+</tr>
+<tr>
+<td>RejectionReason</td>
+<td>TransactionStatus</td>
+<td>Reason transaction was rejected. Options are: <br> <strong>PAST_CANCEL_DATE</strong> - Allowed cancellation date is in the past. <br> <strong>PAST_TOUR_DATE</strong> - Tour date is in the past.<br> <strong>TOUR_REDEEMED</strong> - Tour has al- ready been redeemed.<br> <strong>OTHER</strong> - Any other reason. Details must be provided in RejectionReasonDetails.</td>
+</tr>
+</tbody></table>
+<h1 id='http-status-codes'>HTTP Status Codes</h1>
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Reason</th>
+<th>Description</th>
+<th>Recommended Action</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>Status OK</td>
+<td>Request executed without error</td>
+<td>None</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+<td>Invalid Request</td>
+<td>Check for malformed XML</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+<td>Authentication for the request has failed</td>
+<td>Check the required authentication requirements.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+<td>Requested API routine is not an implemented method</td>
+<td>Check the naming of the inbound request</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Unavailable</td>
+<td>Throttle rate limit has been exceeded</td>
+<td>Retry using exponential backoff. You need to slow down the rate at which you are sending requests.</td>
+</tr>
+</tbody></table>
+<h1 id='legal'>Legal</h1>
+<p>The Zaui IO Application Programming Interface (the “API”) is owned and operated by Zaui Software. If you use the Zaui Software IO API, you will be able to access data from any partner Supplier within the Zaui system. Listed below are the terms and conditions of use (the “Terms”) for this API. By using, accessing and/or viewing information on the API, you agree to be bound by these Terms. If you violate these Terms, Zaui Software has the right to terminate your use of the API and/or take appropriate legal actions against you. We reserve the right to change these Terms at any time without notice.</p>
+<h2 id='acceptance-of-terms'>Acceptance of Terms</h2>
+<p>In order to use the API you must agree to these Terms. You represent that you have the full power, capacity and authority to accept these Terms. If you are accepting on behalf of a business entity, you represent that you have the full legal authority to bind the business entity to these Terms. These terms are in addition to the standard Zaui Software Terms of Service.</p>
+<h2 id='permitted-use'>Permitted Use</h2>
+<p>You may access, view and make copies of the data in the API for your personal or commercial use. Due to the special features of API, by accessing and viewing information from API you agree to be bound by these special terms:</p>
+
+<ol>
+<li>You will not modify the data from API in any way</li>
+<li>You will not modify the link structure to API</li>
+</ol>
+<h3 id='subject-to-these-terms-zaui-software-gives-you-a-personal-worldwide-non-assignable-and-non-exclusive-license-to-the-api'>Subject to these Terms, Zaui Software gives you a personal, worldwide, non-assignable and non-exclusive license to the API.</h3><h2 id='restrictions'>Restrictions</h2>
+<p>You may not:</p>
+
+<ol>
+<li>Display the API in any manner that implies a relationship or affiliation with, sponsorship, or endorsement by Zaui or that can be reasonably interpret to suggest content represents the views or opinions of Zaui.</li>
+<li>Use the API to disparage Zaui or its products, partners or product suppliers.</li>
+<li>Use the API on your website if the website promotes illegal activity, contains pornography, gambling, or the sale of tobacco or alcohol to individuals under the age of legal consumption.</li>
+<li>Delete or alter any trade names, trademarks, service marks, logos, domain names or other distinctive brand features of Zaui that are included in the API in applications or programs that you create.</li>
+<li>Reverse engineer, decompile or otherwise attempt to extract the source code of the API or any part thereof, unless this is expressly permitted or required by applicable law.</li>
+<li>Access, tamper with, or use non-public areas of the Services, Zaui computer systems, or the technical delivery systems of Zaui providers; (ii) probe, scan, or test the vulnerability of any system or network or breach or circumvent any security or authentication measures.</li>
+<li>Access or search or attempt to access or search the Services by any means (automated or otherwise) other than through our currently available, published interfaces that are provided by Zaui, unless you have been specifically allowed to do so in a separate agreement with Zaui.</li>
+<li>Forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Services to send altered, deceptive or false source-identifying information.</li>
+<li>Interfere with, or disrupt, (or attempt to do so), the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, mail-bombing the Services, or by scripting the creation of Content in such a manner as to interfere with or create an undue burden on the Services.</li>
+</ol>
+<h2 id='rate-limits-and-monitoring'>Rate Limits and Monitoring</h2>
+<p>Your use of the Zaui IO API and Zaui Content are subject to certain limitations on access, calls, and use as determined by Zaui, at its sole discretion. If Zaui believes that you have attempted to exceed or circumvent these limitations, your ability to use the Zaui IO API and ZContent may be temporarily or permanently blocked. Zaui may monitor your use of the Zaui API to improve the Zaui service and to ensure your compliance with these Terms.</p>
+<h2 id='ownership-trademarks'>Ownership/Trademarks</h2>
+<p>You do not acquire or have any ownership, license or other proprietary interest in the API. You understand that the API is protected by copyrights, trademarks, service marks, patents and other proprietary rights and laws.</p>
+<h2 id='privacy-policy'>Privacy Policy</h2>
+<p>The use of personal information is governed by our <a href="https://www.zaui.com/privacy" target="_blank"_>Privacy Policy</a> and the <a href="https://www.zaui.com/terms-of-service/" target="_blank"_>Zaui Terms of Service</a>.</p>
+<h2 id='limitation-of-liability'>Limitation of Liability</h2>
+<p>Zaui assumes no responsibility for, and shall not be liable for, any damages or expenses you may incur as a result of any inaccuracy, incompleteness or obsolescence of anything contained in the API. THE SERVICES OF THE API ARE PROVIDED “AS IS”, WITH NO WARRANTIES WHATSOEVER. Without limiting the generality of the forgoing, you agree that neither Zaui nor any of its affiliates, employees or agents will be liable to you or to any other party for any direct or indirect damages, or for any special, exemplary, punitive, incidental, consequential or other damages (including, but not limited to, lost profits or lost time), whether based on contract, tort, strict liability or otherwise, which arise out of or are in any way connected with any access to the API or any viewing or use of any information on the API. You acknowledge that the limitations in this Section are reasonable and appropriate. Zaui DISCLAIMS ALL WARRANTIES REGARDING THE ACCURACY, COMPLETENESS, CURRENCY OR RELIABILITY OF THE DATA IN THE API, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT OR OTHERWISE ARISING BY LAW OR STATUTE. YOU AGREE THAT YOUR USE OF, OR RELIANCE UPON, ALL DATA OBTAINED THROUGH THE API IS AT YOUR OWN DISCRETION AND RISK.</p>
+<h2 id='unauthorized-use-no-interference'>Unauthorized Use/No Interference</h2>
+<p>You agree that you will not use or attempt to use any method, device, software or routine to harm others or interfere with functioning of the API or use and/or monitor any information in or related to the API for any unauthorized purpose.</p>
+
+<p>By using the API in applications or programs you create, you agree to be solely liable for any damage resulting from any infringement of copyrights, proprietary rights, or any other harm (including but not limited to harm caused by spyware, malware, worms, Trojan horses and viruses) resulting from such application or program.</p>
+<h2 id='indemnification'>Indemnification</h2>
+<p>You agree to indemnify and to hold Zaui, its subsidiaries, affiliates, business partners, officers, employers and other agents, harmless from and against any loss, liability, damage or expense (including reasonable attorneys fees) arising out of your use of the API, including, without limitation, any violations by you of these Terms.</p>
+<h2 id='termination'>Termination</h2>
+<p>Without limiting its other remedies, Zaui may immediately discontinue, suspend, terminate or block your and any user’s use of the API at any time in its sole discretion. You may terminate this agreement by ceasing to use the API or any product incorporating it.</p>
+
+<p>Zaui may in its sole discretion choose to upgrade the current version of the API at any time without notice to you, which may make the version of the API that you are using obsolete.</p>
+<h2 id='accuracy-of-information'>Accuracy of Information</h2>
+<p>ALL INFORMATION IN THE API IS PROVIDED TO YOU ON AN “AS-IS” BASIS. ZAUI SOFTWARE DISCLAIMS ALL WARRANTIES REGARDING THE ACCURACY, COMPLETENESS, CURRENCY OR RELIABILITY OF ANY INFORMATION IN THE API, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT OR OTHERWISE ARISING BY LAW OR STATUTE.</p>
+<h2 id='transmission-failures'>Transmission Failures</h2>
+<p>Zaui will use commercially reasonable efforts to publish and transmit the API on a continuous and timely basis. Zaui is not, however, responsible for any failure or malfunction in communications; for any failure or refusal of any third party transmission intermediaries to transmit any API; or for the failure to transmit any API resulting from any natural disasters, wars, labor strike or other events beyond the control of Zaui.</p>
+<h2 id='limitation-of-liability-2'>Limitation of Liability</h2>
+<p>You acknowledge that, Zaui cannot and does not assume any responsibility for, and shall not be liable for, any damages or expenses you may incur as a result of any inaccuracy, incompleteness or obsolescence of any information contained in the API. You agree that Zaui will not be liable to you or to any other party for any direct or indirect damages, or for any special, exemplary, punitive, incidental, consequential or other damages (including, but not limited to, lost profits or lost time), whether based on contract, tort, strict liability or otherwise, which arise out of or are in any way connected with any access to the API or any contractual or other dealings or relationships you may have with third parties based upon any information included in the Zaui.</p>
+<h2 id='governing-law-jurisdiction'>Governing law/Jurisdiction</h2>
+<p>These terms and conditions and your access to and use of information from the API are governed by the laws of the Province of British Columbia. In the event of any dispute regarding the interpretation or compliance with these terms and conditions, you consent to the exclusive jurisdiction of the Provincial and Federal courts located in British Columbia.</p>
+<h2 id='entire-agreement'>Entire Agreement</h2>
+<p>These terms and conditions of use for this API constitute the entire agreement between you and Zaui regarding your access to the API and your reproduction and use of any information in the API. Any waiver of any term or condition shall not be effective unless in a written document signed by an authorized representative of Zaui.</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="xml">xml</a>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
